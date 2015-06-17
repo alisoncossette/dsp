@@ -5,7 +5,7 @@
 
 You have it installed if you can run `git --version` at the command
 line and get output like `git version 2.3.5`.
-
+>I have installed git version 2.3.5
 
 ### Install [Anaconda](http://continuum.io/downloads).
 
