@@ -11,64 +11,60 @@ these in a couple of hours.
  
 Make a cheat sheet for yourself: a list of commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 <table>
-<tr>
->pwd print working directory
+<tr><td>pwd </td><td>print working directory</td></tr>
+<tr><td>hostname </td> <td>name of computer</td></tr>
+<tr><td>cd </td><td> change directory</td></tr>
 
->hostname  name of computer
+<tr><td>cd .. </td><td>go up a directory</td></tr>
 
->cd  change directory
+<tr><td>mkdir </td><td>make a directory</td></tr>
 
->cd .. go up a directory
+<tr><td>ls  </td><td>list directory</td></tr>
 
->mkdir make a directory
+<tr><td>rmdir </td><td>remove directory</td></tr>
 
->ls  list directory
+<tr><td>pushd </td><td>creates a "bookmark" to current directory</td></tr>
 
->rmdir remove directory
+<tr><td>popd  </td><td>returns to last pushd directory</td></tr>
 
->pushd creates a "bookmark" to current directory
+<tr><td>touch </td><td>make a new empty file</td></tr>
 
->popd  returns to last pushd directory
+<tr><td>cp  </td><td>copy file "cp oldfilename.txt newfilename.txt"</td></tr>
 
->touch make a new empty file
+<tr><td>rmv </td><td>changes name of file "mv oldname newname"</td></tr>
 
->cp  copy file "cp oldfilename.txt newfilename.txt"
+<tr><td>cat  </td><td>show full uneditable file with pagination</td></tr>
 
->mv changes name of file "mv oldname newname"
+<tr><td>rm </td><td>removing a file</td></tr>
 
->cat  show full uneditable file with pagination
+<tr><td>-r </td><td>recursive i.e. rm-r removes all subdirectories & files</td></tr>
 
->rm removing a file
+<tr><td>-x </td><td>only what is noted</td></tr>
+<tr>-a </td><td>shows subdirectory (all)</td></tr>
 
->-r recursive i.e. rm-r removes all subdirectories & files
+<tr>-lh  </td><td>shows prints sized in human readable form</td></tr>
 
->-x only what is noted
+<tr>-l </td><td>long listing format</td></tr>
 
->-a shows subdirectory (all)
+<tr>-v </td><td>not equal to</td></tr>
 
->-lh  shows prints sized in human readable form
+<tr><td>$|$  </td><td>action after pipe is affected on file before piping</td></tr>
+<td>
+<tr><td>$<$  </td><td>sends input from right into program on left</td></tr>
 
->-l long listing format
+<tr><td>$>$  </td><td>takes output from the left then writes to the right</td></tr>
 
->-v not equal to
+<tr><td>$>>$ </td><td>takes output from the left and appends it to the file on the right</td></tr>
 
->$|$  action after pipe is affected on file before piping
+<tr><td>'*'  </td><td>matches anything</td></tr>
 
->$<$  sends input from right into program on left
+<tr><td>find.  </td><td>find with . indicating "start  here"</td></tr>
 
->$>$  takes output from the left then writes to the right
+<tr><td>grep  </td><td>Globally search a Regular Expression & Print</td></tr>
 
->$>>$ takes output from the left and appends it to the file on the right
+<tr><td>help or man  </td><td>offers help - follow help with item name to get more info on item</td></tr>
 
->'*'  matches anything
-
->find.  find with . indicating "start  here"
-
->grep  Globally search a Regular Expression & Print
-
->help or man  offers help - follow help with item name to get more info on item
-
->remove-item  to delete environment variable
+<tr><td>remove-item  </td><td>to delete environment variable</td></tr>
 </table>
 
 ---
