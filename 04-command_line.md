@@ -39,6 +39,7 @@ Make a cheat sheet for yourself: a list of commands and what they do, focused on
 <tr><td>find.  </td><td>find with . indicating "start  here"</td></tr>
 <tr><td>grep  </td><td>Globally search a Regular Expression & Print</td></tr>
 <tr><td>help or man  </td><td>offers help - follow help with item name to get more info on item</td></tr>
+<tr><td>env</td><td>lists current environment variables</td></tr>
 <tr><td>remove-item  </td><td>to delete environment variable</td></tr>
 </table>
 
@@ -49,7 +50,11 @@ Make a cheat sheet for yourself: a list of commands and what they do, focused on
 
 What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations of those flags are meaningful?
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+>ls = list contents of directory
+>ls -a = list contents of directory "all" including hidden files
+>ls -l = list contents of directory with long listing form
+>ls -lh = list contents of directory with long listing form with sizes listed in human readable form
+>Combining parameters allows you to produce the specific output you desire in one line of command line code.
 
 ---
 
@@ -58,6 +63,8 @@ REPLACE THIS TEXT WITH YOUR RESPONSE
 
 What does `xargs` do? Give an example of how to use it.
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+>xargs allows you to create a line that works like a function so the parameters that meet your criteria are fed into xargs as a list. The line of code then executes on each item in the list and iterates until complete on all xargs elements.  If the command line code contains the complete list, then the arguement list is too long to execute.  xargs basically breaks down the list into single line iterations of the function.
+
+>find. -name *.txt | xargs cat less
 
 ---
