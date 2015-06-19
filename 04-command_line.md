@@ -10,7 +10,8 @@ these in a couple of hours.
 
  
 Make a cheat sheet for yourself: a list of commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
-
+<table>
+<tr>
 >pwd print working directory
 
 >hostname  name of computer
@@ -59,16 +60,16 @@ Make a cheat sheet for yourself: a list of commands and what they do, focused on
 
 >$>>$ takes output from the left and appends it to the file on the right
 
->*  matches anything
+>'*'  matches anything
 
 >find.  find with . indicating "start  here"
 
-> grep  Globally search a Regular Expression & Print
+>grep  Globally search a Regular Expression & Print
 
->help or man  offers help or manu
-
+>help or man  offers help - follow help with item name to get more info on item
 
 >remove-item  to delete environment variable
+</table>
 
 ---
 
