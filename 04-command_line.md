@@ -51,9 +51,13 @@ Make a cheat sheet for yourself: a list of commands and what they do, focused on
 What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations of those flags are meaningful?
 
 >ls = list contents of directory
+
 >ls -a = list contents of directory "all" including hidden files
+
 >ls -l = list contents of directory with long listing form
+
 >ls -lh = list contents of directory with long listing form with sizes listed in human readable form
+
 >Combining parameters allows you to produce the specific output you desire in one line of command line code.
 
 ---
