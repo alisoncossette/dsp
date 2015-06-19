@@ -37,7 +37,7 @@ import sklearn
 
 Did you install Python 2 or 3? Why? How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+>I installed 2.7.9.  Generally I would have installed 3, but as the course utilized 2.7 I thought it best to work with a consistent release.  I imagine at the end of the course I will switch to 3.
 
 ---
 
@@ -48,3 +48,4 @@ If you use a Mac, install [Homebrew](http://brew.sh/) if you don't
 have it yet. You could use Homebrew to manage your `git` and `python`
 installs as well, but the methods given above are very good and more
 cross-platform.
+> I am not using a Mac.  I opted for Ubuntu via a VirtualBox VM.
