@@ -31,7 +31,7 @@ Both Emacs and vim have built-in interactive tutorials that you can try.
 
 What terminal editor will you use? How did you make your decision?
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+>I opted for vim.  I look forward to being able to utilize the flexibility of the interface as well as advanced plug-in, though they are admittedly above my skill level at this time.
 
 ---
 
@@ -61,6 +61,6 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+>Traditionally I have always used Canopy, but as Spyder was included with the Anaconda download.  I'm currently using it for the first time so I'm not certain of the most interesting features.  I will edit this statement after further use.
 
 ---
