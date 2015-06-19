@@ -35,7 +35,7 @@ Make a cheat sheet for yourself: a list of commands and what they do, focused on
 <tr><td>$<$  </td><td>sends input from right into program on left</td></tr>
 <tr><td>$>$  </td><td>takes output from the left then writes to the right</td></tr>
 <tr><td>$>>$ </td><td>takes output from the left and appends it to the file on the right</td></tr>
-<tr><td>'*'  </td><td>matches anything</td></tr>
+<tr><td>*  </td><td>matches anything</td></tr>
 <tr><td>find.  </td><td>find with . indicating "start  here"</td></tr>
 <tr><td>grep  </td><td>Globally search a Regular Expression & Print</td></tr>
 <tr><td>help or man  </td><td>offers help - follow help with item name to get more info on item</td></tr>
