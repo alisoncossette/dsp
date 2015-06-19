@@ -58,3 +58,4 @@ To get a complete understanding of `git`, you should read [Pro Git](http://git-s
 [<img src="img/pro_git.png" title="Pro Git" width="250" />](http://git-scm.com/book/en/v2)
 
 It isn't required, but you can also submit work to your forked repository by `clone`ing your fork, editing files on your machine, `add`ing them to the staging area, `commit`ting them, and `push`ing your changes back up to GitHub.
+> I have completed these items.
