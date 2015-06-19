@@ -65,6 +65,7 @@ What does `xargs` do? Give an example of how to use it.
 
 >xargs allows you to create a line that works like a function so the parameters that meet your criteria are fed into xargs as a list. The line of code then executes on each item in the list and iterates until complete on all xargs elements.  If the command line code contains the complete list, then the arguement list is too long to execute.  xargs basically breaks down the list into single line iterations of the function.
 
-'find. -name *.txt | xargs cat less'
+`find. -name *2.txt | xargs cat -a less`
+>This will print a limited amount of the contents of each text file ending in "2" that is in the current working directory including hidden files.
 
 ---
