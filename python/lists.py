@@ -1,13 +1,11 @@
 # Based on materials copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
 
-
 def match_ends(words):
     """
     Given a list of strings, return the count of the number of strings
     where the string length is 2 or more and the first and last chars
     of the string are the same.
-
     >>> match_ends(['aba', 'xyz', 'aa', 'x', 'bbb'])
     3
     >>> match_ends(['', 'x', 'xy', 'xyx', 'xx'])
@@ -15,7 +13,22 @@ def match_ends(words):
     >>> match_ends(['aaa', 'be', 'abc', 'hello'])
     1
     """
-    raise NotImplementedError
+    count=0
+    i=0
+    while i<len(words): 
+        if len(words[i])>1:
+            word=words[i]
+            if word[0]==word[-1]:
+                count=count+1
+        i=i+1
+    print count
+    
+
+    
+    
+match_ends(['aba', 'xyz', 'aa', 'x', 'bbb'])
+match_ends(['', 'x', 'xy', 'xyx', 'xx'])
+match_ends(['aaa', 'be', 'abc', 'hello'])
 
 
 def front_x(words):
@@ -32,9 +45,25 @@ def front_x(words):
     >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
     ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
     """
-    raise NotImplementedError
-
-
+    i=0
+    xwords=[]
+    while i<len(words):
+        word=words[i]
+        if word[0]=='x':
+            xwords.append(word)
+            del words[i]
+            i=i-1
+        i=i+1
+    xwords.sort()
+    words.sort()
+    newlist=xwords+words
+    print newlist
+    
+front_x(['bbb', 'ccc', 'axx', 'xzz', 'xaa'])
+front_x(['ccc', 'bbb', 'aaa', 'xcc', 'xaa'])
+front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
+    
+    
 def sort_last(tuples):
     """
     Given a list of non-empty tuples, return a list sorted in
@@ -49,7 +78,14 @@ def sort_last(tuples):
     >>> sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
     [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
     """
-    raise NotImplementedError
+
+    print sorted(tuples, key=lambda x: x[-1])    
+    
+sort_last([(1, 3), (3, 2), (2, 1)])
+sort_last([(2, 3), (1, 2), (3, 1)])
+sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
+
+
 
 
 def remove_adjacent(nums):
@@ -68,7 +104,20 @@ def remove_adjacent(nums):
     >>> remove_adjacent([])
     []
     """
-    raise NotImplementedError
+    i=0
+    while i<len(nums)-1:
+        if nums[i]==nums[i+1]:
+            del nums[i+1]
+            i=i-1
+        i=i+1
+    print nums
+        
+    
+remove_adjacent([1, 2, 2, 3])
+remove_adjacent([2, 2, 3, 3, 3])
+remove_adjacent([3, 2, 3, 3, 3])
+remove_adjacent([])
+
 
 
 def linear_merge(list1, list2):
@@ -85,4 +134,28 @@ def linear_merge(list1, list2):
     >>> linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
     ['aa', 'aa', 'aa', 'bb', 'bb']
     """
-    raise NotImplementedError
+    newlist=list1+list2
+    print sorted(newlist)    
+    
+# I struggeld with the following code - couldn't get it to work...so took the easy way
+    
+#    i=0
+#    j=0
+#   while i<len(list2):
+#        while j<len(list1):
+#            if list1[j]<list2[i]:
+#                j=j+1
+#            else:                
+#                new=list2[i]
+#                index=j
+#                list1.insert(index,new)
+#                j=j+1
+#    i=i+1
+#    print list1
+        
+            
+            
+linear_merge(['aa', 'xx', 'zz'], ['bb', 'cc'])
+linear_merge(['aa', 'xx'], ['bb', 'cc', 'zz'])
+linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])   
+   
