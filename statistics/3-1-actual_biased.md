@@ -34,8 +34,8 @@
       print 'actual mean', pmf.Mean()
       print 'biased mean', biased_pmf.Mean()
 
-OUTPUT
-      actual mean 1.02420515504
-      biased mean 2.40367910066
+OUTPUT<br>
+actual mean 1.02420515504<br>
+biased mean 2.40367910066<br>
 
 ![Chapter3Exercise1](https://cloud.githubusercontent.com/assets/10352130/8342633/89372bfe-1a9b-11e5-9b4a-3a7043be5de7.png)
