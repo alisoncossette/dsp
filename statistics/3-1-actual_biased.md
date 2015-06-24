@@ -1,3 +1,35 @@
 [Think Stats Chapter 3 Exercise 1](http://greenteapress.com/thinkstats2/html/thinkstats2004.html#toc31) (actual vs. biased)
-
-REPLACE THIS TEXT WITH YOUR RESPONSE
+  
+  
+      import matplotlib.pyplot as plt
+      import thinkstats2
+      import thinkplot
+      import chap01soln
+      
+      resp = chap01soln.ReadFemResp()
+      
+      d=resp.numkdhh
+      pmf=thinkstats2.Pmf(d, label='actual')
+      
+      def BiasPmf(pmf, label):
+          new_pmf=pmf.Copy(label=label)
+          
+          for x, p in pmf.Items():
+              new_pmf.Mult(x,x)
+              
+          new_pmf.Normalize()
+          return new_pmf
+      
+      biased_pmf = BiasPmf(pmf, label='observed')
+      
+      plt.figure()
+      thinkplot.PrePlot(2)
+      thinkplot.Pmfs([pmf,biased_pmf])
+      plt.legend(loc='best')
+      plt.xlabel('No. of Children')
+      plt.ylabel('PMF')
+      plt.title('Plot Showing Actual vs. Observed No. of Children in Household')
+      plt.show()
+      
+      print 'actual mean', pmf.Mean()
+      print 'biased mean', biased_pmf.Mean()
