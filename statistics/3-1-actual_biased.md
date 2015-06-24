@@ -1,5 +1,7 @@
 [Think Stats Chapter 3 Exercise 1](http://greenteapress.com/thinkstats2/html/thinkstats2004.html#toc31) (actual vs. biased)
-  
+><b>Problem:</b> Compare the actual vs. perceived number of children in a household.
+><b>How: </b>Determine probability mass function for observed number of children.  Then create a copy of the original then multiply occurrences by value to determine perceived or biased distribution.  Plot both on graph.
+><b>Solution:</b>
   
       import matplotlib.pyplot as plt
       import thinkstats2
@@ -34,7 +36,7 @@
       print 'actual mean', pmf.Mean()
       print 'biased mean', biased_pmf.Mean()
 
-OUTPUT<br>
+<b>OUTPUT</b><br>
 actual mean 1.02420515504<br>
 biased mean 2.40367910066<br>
 
