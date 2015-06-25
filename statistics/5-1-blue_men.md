@@ -1,6 +1,6 @@
 [Think Stats Chapter 5 Exercise 1](http://greenteapress.com/thinkstats2/html/thinkstats2006.html#toc50) (blue men)
-><b>Problem: </b><br>
-><b>How: </b><br>
+><b>Problem: </b>Determine what perecentage of men are between 5'10" and 6'1".<br> 
+><b>How: </b><br>Calculate the percentage of men that are 5'10 or shorter and the percentage of men that are 6.1" or shorter, then calculate the difference.
 ><b>Solution </b><br>
 
     import scipy.stats
