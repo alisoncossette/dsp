@@ -11,7 +11,6 @@ The problem was to determine if first babies are lighter or heavier on average t
     
     #global variables
     
-    df=nsfg.ReadFemPreg()   
     preg = nsfg.ReadFemPreg()
     
     live = preg[preg.outcome == 1]
