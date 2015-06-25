@@ -19,8 +19,8 @@
     
     #tall - short = %range
     bluemen=(tall_cdf - short_cdf)*100
-    print "{:.3}%".format(bluemen), "of men are between 5'10'' and 6'1'' and therfore 'Blueman' eligible."
+    print "{:.3}%".format(bluemen), "of men are between 5'10'' and 6'1'' and therefore 'Blueman' eligible."
 <b> OUTPUT</b></br>
 >50.0% of men are up to 5'10.<br>
 >81.8%  of men are are up to 6'1.<br>
->31.8% of men are between 5'10'' and 6'1'' and therfore 'Blueman' eligible.
+>31.8% of men are between 5'10'' and 6'1'' and therefore 'Blueman' eligible.
