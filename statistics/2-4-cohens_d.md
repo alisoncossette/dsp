@@ -6,6 +6,7 @@ The problem was to determine if first babies are lighter or heavier on average t
 >
 > To solve the problem, I had to establish first live births.  Then first babies are defined as live births with a pregnancy order of 1, and all other live births become others.  I then used these firsts & others distinctions to calculate and print the mean.  These same distinctions were used to feed the Cohen's d function with the totalwgt__lbs variable.  For the subsequent question, I just changed the arguments being fed to the function to represent pregnancy length instead.<br>
 ><i>* NOTE:  I had to adjust the order of the arguments so that the pooled_var was a positive number (you see that the formula takes the sqrt of pooled_var and if it is negative it throws a math error</i>
+    
     import nsfg
     import math as math
     
