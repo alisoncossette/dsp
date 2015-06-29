@@ -8,8 +8,6 @@ import thinkstats2
 import random
 import thinkplot
 import matplotlib.pyplot as plt
-
-#estimation.Estimate4(lam=2, m=1000000)
 lam =2
 m=1000000
 
