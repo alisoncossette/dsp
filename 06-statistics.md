@@ -36,6 +36,6 @@ REPLACE THIS TEXT WITH YOUR RESPONSE
 
 How do frequentist and Bayesian statistics compare?
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+The prime difference relates to how they each use probability.  Bayes would start with a reaonsable probability distribution and then collect data, and updated the distribution whereas a frequentist would only use the data from sampling.
 
 ---
