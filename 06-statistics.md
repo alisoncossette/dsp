@@ -26,17 +26,16 @@ Communicate the problem, how you solved it, and the solution, within each of the
 ---
 
 Elvis Presley had a twin brother who died at birth.  What is the probability that Elvis was an identical twin?
-T=twins
-F=fraternal
-I=identical
+T=twins = 1/53
+F=fraternal = 1/125
+I=identical= 1/250
 
-P(Twins)=P(F)+P(I) = 1/125 + 1/300 = 17/1500
-
+P(Twins)=P(F)+P(I) = 1/125 + 1/250 = 3/250
 
 Utilize conditional probability to calculate the probability of him being identical given that we KNOW already he is a twin..
-P(I|T) = P(I)/P(T) = (1/300)/(17/1500) = 5/17 
----http://www.modernmom.com/db59d6d2-3b3d-11e3-be8a-bc764e04a41e.html
-
+P(I|T) = P(I)/P(T) = (1/250)/(3/250) = 1/3 
+http://www.modernmom.com/db59d6d2-3b3d-11e3-be8a-bc764e04a41e.html
+---
 
 ---
 
