@@ -18,8 +18,7 @@ These exercises are implemented with doctests, which are runnable tests inside d
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
-
+>The biggest difference is that tuples are immutable and lists are mutable.  Therefore lists can not be keys in >dictionaries becuase the key can not be mutable on the values,
 ---
 
 
