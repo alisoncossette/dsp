@@ -32,12 +32,17 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->>lamda is a one line minifunction that takes arguments and applies them to a small code/process and iterates as directed.  It can be used in sort as a way to prioritize which element are sorted by priority for example.  If you wanted to sort first by class course code and then alphabetically by student
-    x=(('PR401.7', 'Charles Crown'),('PR403.6', 'Robert Red'),(PR401.7, 'Alice Adams'), ('PR403.6','Bob Evans')
+>>lamda is a one line minifunction that takes arguments and applies them to a small code/process and iterates as directed.  It can be used in sort as a way to prioritize which element are sorted by priority for example.  If you wanted to sort first by class course code and then alphabetically by student<br>
 
-    new_list=sorted(items, key=lambda x: (x[0], x[1])
-    print new_list
+    x=[['PR401.7', 'Charles Crown'],
+    ['PR403.6', 'Robert Red'],
+    ['PR401.7', 'Alice Adams'], 
+    ['PR403.6','Bob Evans']]
     
+    new_list=sorted(x, key=lambda x: (x[0], x[1]))
+    
+    print new_list
+
     >>>(PR401.7, 'Alice Adams'),('PR401.7', 'Charles Crown'),('PR403.6','Bob Evans'),('PR403.6', 'Robert Red')
 
 
@@ -49,8 +54,8 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
-
+>>map applies a function to every member of an iterable and returns the result
+>>filter is a true/false condition that is applied and returns only the values that meet the condition as TRUE.
 ---
 
 
