@@ -18,24 +18,29 @@ These exercises are implemented with doctests, which are runnable tests inside d
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->The biggest difference is that tuples are immutable and lists are mutable.  Therefore lists can not be keys in >dictionaries becuase the key can not be mutable on the values,
 ---
-
+>>The biggest difference is that tuples are immutable and lists are mutable.  Therefore lists can not be keys in dictionaries because the key can not be mutable.
 
 ---
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
-
 ---
-
+>>Sets are an unordered list of unique elements.  Lists can have duplicate element and are also ordered.  The answer does somewhat depend on the data in the list vs. the set.  For example you can have a set of item numbers in inventory but perhaps if you had a list of a customers items ordered, an inventory item number could appear twice if they ordered two of the same item.
 
 ---
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+>>lamda is a one line minifunction that takes arguments and applies them to a small code/process and iterates as directed.  It can be used in sort as a way to prioritize which element are sorted by priority for example.  If you wanted to sort first by class course code and then alphabetically by student
+    x=(('PR401.7', 'Charles Crown'),('PR403.6', 'Robert Red'),(PR401.7, 'Alice Adams'), ('PR403.6','Bob Evans')
+
+    new_list=sorted(items, key=lambda x: (x[0], x[1])
+    print new_list
+    
+    >>>(PR401.7, 'Alice Adams'),('PR401.7', 'Charles Crown'),('PR403.6','Bob Evans'),('PR403.6', 'Robert Red')
+
+
 
 ---
 
